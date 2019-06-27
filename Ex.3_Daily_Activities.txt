@@ -1,0 +1,693 @@
+﻿[
+  [
+    {
+      "id": "characters",
+      "elements": [
+        "lucia",
+        "fernando",
+        "ramon"
+      ]
+    },
+    {
+      "id": "action",
+      "elements": [
+        "studies",
+        "eats",
+        "sleeps"
+      ]
+    },
+    {
+      "id": "location",
+      "elements": [
+        "is_at_school",
+        "is_at_home",
+        "is_at_the_park"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "now",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "characters"
+        },
+        {
+          "id": "p0.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "also",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "characters"
+        },
+        {
+          "id": "p1.1",
+          "value": "location"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "verb",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "action"
+        },
+        {
+          "id": "p2.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "place",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p3.0",
+          "value": "location"
+        },
+        {
+          "id": "p3.1",
+          "value": "location"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "now",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "characters"
+        },
+        {
+          "id": "p0.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "also",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "characters"
+        },
+        {
+          "id": "p1.1",
+          "value": "location"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "verb",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "action"
+        },
+        {
+          "id": "p2.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "place",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p3.0",
+          "value": "location"
+        },
+        {
+          "id": "p3.1",
+          "value": "location"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "change_activity",
+      "conditionIndex": 3,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "Subject",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "c.1.0.1",
+              "arg": "First_activity",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.1.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "Subject",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "a.1.0.1",
+              "arg": "Second_activity",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.1.2",
+          "name": "verb",
+          "arguments": [
+            {
+              "id": "c.1.2.0",
+              "arg": "First_activity",
+              "type": "action",
+              "variable": true
+            },
+            {
+              "id": "c.1.2.1",
+              "arg": "Second_activity",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "characters",
+          "elements": [
+            "Subject"
+          ]
+        },
+        {
+          "id": "action",
+          "elements": [
+            "First_activity",
+            "Second_activity"
+          ]
+        },
+        {
+          "id": "location",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "r2container",
+      "name": "move_location",
+      "conditionIndex": 3,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.2.0",
+          "name": "also",
+          "arguments": [
+            {
+              "id": "c.2.0.0",
+              "arg": "Person",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "c.2.0.1",
+              "arg": "First_position",
+              "type": "location",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.2.0",
+          "name": "also",
+          "arguments": [
+            {
+              "id": "a.2.0.0",
+              "arg": "Person",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "a.2.0.1",
+              "arg": "Second_position",
+              "type": "location",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.2.2",
+          "name": "place",
+          "arguments": [
+            {
+              "id": "c.2.2.0",
+              "arg": "First_position",
+              "type": "location",
+              "variable": true
+            },
+            {
+              "id": "c.2.2.1",
+              "arg": "Second_position",
+              "type": "location",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "characters",
+          "elements": [
+            "Person"
+          ]
+        },
+        {
+          "id": "action",
+          "elements": []
+        },
+        {
+          "id": "location",
+          "elements": [
+            "First_position",
+            "Second_position"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "now",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i0.0",
+          "arg": "lucia",
+          "type": "characters",
+          "variable": false,
+          "value": "lucia"
+        },
+        {
+          "id": "i0.1",
+          "arg": "eats",
+          "type": "action",
+          "variable": false,
+          "value": "eats"
+        }
+      ]
+    },
+    {
+      "id": "i1",
+      "name": "now",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "fernando",
+          "type": "characters",
+          "variable": false,
+          "value": "fernando"
+        },
+        {
+          "id": "i1.1",
+          "arg": "studies",
+          "type": "action",
+          "variable": false,
+          "value": "studies"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "now",
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "ramon",
+          "type": "characters",
+          "variable": false,
+          "value": "ramon"
+        },
+        {
+          "id": "i2.1",
+          "arg": "sleeps",
+          "type": "action",
+          "variable": false,
+          "value": "sleeps"
+        }
+      ]
+    },
+    {
+      "id": "i17",
+      "name": "also",
+      "arguments": [
+        {
+          "id": "i17.0",
+          "arg": "lucia",
+          "type": "characters",
+          "variable": false,
+          "value": "lucia"
+        },
+        {
+          "id": "i17.1",
+          "arg": "is_at_home",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_home"
+        }
+      ]
+    },
+    {
+      "id": "i31",
+      "name": "also",
+      "arguments": [
+        {
+          "id": "i31.0",
+          "arg": "fernando",
+          "type": "characters",
+          "variable": false,
+          "value": "fernando"
+        },
+        {
+          "id": "i31.1",
+          "arg": "is_at_the_park",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_the_park"
+        }
+      ]
+    },
+    {
+      "id": "i32",
+      "name": "also",
+      "arguments": [
+        {
+          "id": "i32.0",
+          "arg": "ramon",
+          "type": "characters",
+          "variable": false,
+          "value": "ramon"
+        },
+        {
+          "id": "i32.1",
+          "arg": "is_at_school",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_school"
+        }
+      ]
+    },
+    {
+      "id": "i33",
+      "name": "verb",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i33.0",
+          "arg": "studies",
+          "type": "action",
+          "variable": false,
+          "value": "studies"
+        },
+        {
+          "id": "i33.1",
+          "arg": "eats",
+          "type": "action",
+          "variable": false,
+          "value": "eats"
+        }
+      ]
+    },
+    {
+      "id": "i34",
+      "name": "verb",
+      "arguments": [
+        {
+          "id": "i34.0",
+          "arg": "studies",
+          "type": "action",
+          "variable": false,
+          "value": "studies"
+        },
+        {
+          "id": "i34.1",
+          "arg": "sleeps",
+          "type": "action",
+          "variable": false,
+          "value": "sleeps"
+        }
+      ]
+    },
+    {
+      "id": "i35",
+      "name": "verb",
+      "arguments": [
+        {
+          "id": "i35.0",
+          "arg": "eats",
+          "type": "action",
+          "variable": false,
+          "value": "eats"
+        },
+        {
+          "id": "i35.1",
+          "arg": "studies",
+          "type": "action",
+          "variable": false,
+          "value": "studies"
+        }
+      ]
+    },
+    {
+      "id": "i36",
+      "name": "verb",
+      "arguments": [
+        {
+          "id": "i36.0",
+          "arg": "eats",
+          "type": "action",
+          "variable": false,
+          "value": "eats"
+        },
+        {
+          "id": "i36.1",
+          "arg": "sleeps",
+          "type": "action",
+          "variable": false,
+          "value": "sleeps"
+        }
+      ]
+    },
+    {
+      "id": "i37",
+      "name": "verb",
+      "arguments": [
+        {
+          "id": "i37.0",
+          "arg": "sleeps",
+          "type": "action",
+          "variable": false,
+          "value": "sleeps"
+        },
+        {
+          "id": "i37.1",
+          "arg": "studies",
+          "type": "action",
+          "variable": false,
+          "value": "studies"
+        }
+      ]
+    },
+    {
+      "id": "i38",
+      "name": "verb",
+      "arguments": [
+        {
+          "id": "i38.0",
+          "arg": "sleeps",
+          "type": "action",
+          "variable": false,
+          "value": "sleeps"
+        },
+        {
+          "id": "i38.1",
+          "arg": "eats",
+          "type": "action",
+          "variable": false,
+          "value": "eats"
+        }
+      ]
+    },
+    {
+      "id": "i39",
+      "name": "place",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i39.0",
+          "arg": "is_at_school",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_school"
+        },
+        {
+          "id": "i39.1",
+          "arg": "is_at_home",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_home"
+        }
+      ]
+    },
+    {
+      "id": "i40",
+      "name": "place",
+      "arguments": [
+        {
+          "id": "i40.0",
+          "arg": "is_at_school",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_school"
+        },
+        {
+          "id": "i40.1",
+          "arg": "is_at_the_park",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_the_park"
+        }
+      ]
+    },
+    {
+      "id": "i41",
+      "name": "place",
+      "arguments": [
+        {
+          "id": "i41.0",
+          "arg": "is_at_home",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_home"
+        },
+        {
+          "id": "i41.1",
+          "arg": "is_at_school",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_school"
+        }
+      ]
+    },
+    {
+      "id": "i42",
+      "name": "place",
+      "arguments": [
+        {
+          "id": "i42.0",
+          "arg": "is_at_home",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_home"
+        },
+        {
+          "id": "i42.1",
+          "arg": "is_at_the_park",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_the_park"
+        }
+      ]
+    },
+    {
+      "id": "i43",
+      "name": "place",
+      "arguments": [
+        {
+          "id": "i43.0",
+          "arg": "is_at_the_park",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_the_park"
+        },
+        {
+          "id": "i43.1",
+          "arg": "is_at_school",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_school"
+        }
+      ]
+    },
+    {
+      "id": "i44",
+      "name": "place",
+      "arguments": [
+        {
+          "id": "i44.0",
+          "arg": "is_at_the_park",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_the_park"
+        },
+        {
+          "id": "i44.1",
+          "arg": "is_at_home",
+          "type": "location",
+          "variable": false,
+          "value": "is_at_home"
+        }
+      ]
+    }
+  ],
+  4,
+  2,
+  45
+]

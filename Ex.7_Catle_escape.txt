@@ -1,0 +1,1205 @@
+﻿[
+  [
+    {
+      "id": "elements",
+      "elements": [
+        "virgil",
+        "metal_key",
+        "golden_key",
+        "golden_chest",
+        "sturdy_rope",
+        "opened_chest",
+        "empty_chest",
+        "tied_rope",
+        "tower"
+      ]
+    },
+    {
+      "id": "locations",
+      "elements": [
+        "locked_exit",
+        "hallway",
+        "bedroom",
+        "secret_room",
+        "ballroom",
+        "balcony",
+        "road_to_home",
+        "rail"
+      ]
+    },
+    {
+      "id": "locked",
+      "elements": [
+        "sealed_room"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "at",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "elements"
+        },
+        {
+          "id": "p0.1",
+          "value": "locations"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "adjacent",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "locations"
+        },
+        {
+          "id": "p1.1",
+          "value": "locations"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "inside",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "elements"
+        },
+        {
+          "id": "p2.1",
+          "value": "elements"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "equip",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p3.0",
+          "value": "elements"
+        },
+        {
+          "id": "p3.1",
+          "value": "elements"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "trapped",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p4.0",
+          "value": "elements"
+        },
+        {
+          "id": "p4.1",
+          "value": "locked"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "wait_for_it",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p5.0",
+          "value": "locked"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "at",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "elements"
+        },
+        {
+          "id": "p0.1",
+          "value": "locations"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "adjacent",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "locations"
+        },
+        {
+          "id": "p1.1",
+          "value": "locations"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "inside",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "elements"
+        },
+        {
+          "id": "p2.1",
+          "value": "elements"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "equip",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p3.0",
+          "value": "elements"
+        },
+        {
+          "id": "p3.1",
+          "value": "elements"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "trapped",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p4.0",
+          "value": "elements"
+        },
+        {
+          "id": "p4.1",
+          "value": "locked"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "wait_for_it",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p5.0",
+          "value": "locked"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "take_metal_key",
+      "conditionIndex": 2,
+      "addIndex": 4,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "trapped",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.1.0.1",
+              "arg": "sealed_room",
+              "type": "locked",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.1.1",
+          "name": "trapped",
+          "arguments": [
+            {
+              "id": "c.1.1.0",
+              "arg": "metal_key",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.1.1.1",
+              "arg": "sealed_room",
+              "type": "locked",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.1.0",
+          "name": "equip",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.1.0.1",
+              "arg": "metal_key",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "r2container",
+      "name": "open_wood_door",
+      "conditionIndex": 2,
+      "addIndex": 4,
+      "predicateSet": [
+        {
+          "id": "c.2.0",
+          "name": "equip",
+          "arguments": [
+            {
+              "id": "c.2.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.2.0.1",
+              "arg": "metal_key",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.2.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.2.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.2.0.1",
+              "arg": "locked_exit",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.2.1",
+          "name": "trapped",
+          "arguments": [
+            {
+              "id": "c.2.1.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.2.1.1",
+              "arg": "sealed_room",
+              "type": "locked",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "r3container",
+      "name": "move",
+      "conditionIndex": 2,
+      "addIndex": 4,
+      "predicateSet": [
+        {
+          "id": "c.3.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.3.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.3.0.1",
+              "arg": "L",
+              "type": "locations",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.3.1",
+          "name": "adjacent",
+          "arguments": [
+            {
+              "id": "c.3.1.0",
+              "arg": "L",
+              "type": "locations",
+              "variable": true
+            },
+            {
+              "id": "c.3.1.1",
+              "arg": "L2",
+              "type": "locations",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.3.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.3.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.3.0.1",
+              "arg": "L2",
+              "type": "locations",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": [
+            "L",
+            "L2"
+          ]
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "r4container",
+      "name": "take_golden_key",
+      "conditionIndex": 2,
+      "addIndex": 4,
+      "predicateSet": [
+        {
+          "id": "c.4.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.4.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.4.0.1",
+              "arg": "bedroom",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.4.1",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.4.1.0",
+              "arg": "golden_key",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.4.1.1",
+              "arg": "bedroom",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.4.0",
+          "name": "equip",
+          "arguments": [
+            {
+              "id": "a.4.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.4.0.1",
+              "arg": "golden_key",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "r5container",
+      "name": "open_chest",
+      "conditionIndex": 3,
+      "addIndex": 4,
+      "predicateSet": [
+        {
+          "id": "c.5.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.5.0.0",
+              "arg": "golden_chest",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.5.0.1",
+              "arg": "secret_room",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.5.1",
+          "name": "equip",
+          "arguments": [
+            {
+              "id": "c.5.1.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.5.1.1",
+              "arg": "golden_key",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.5.2",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.5.2.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.5.2.1",
+              "arg": "secret_room",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.5.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.5.0.0",
+              "arg": "opened_chest",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.5.0.1",
+              "arg": "secret_room",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "r6container",
+      "name": "loot_chest",
+      "conditionIndex": 2,
+      "addIndex": 8,
+      "predicateSet": [
+        {
+          "id": "c.6.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.6.0.0",
+              "arg": "opened_chest",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.6.0.1",
+              "arg": "secret_room",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.6.1",
+          "name": "inside",
+          "arguments": [
+            {
+              "id": "c.6.1.0",
+              "arg": "sturdy_rope",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.6.1.1",
+              "arg": "opened_chest",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.6.0",
+          "name": "equip",
+          "arguments": [
+            {
+              "id": "a.6.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.6.0.1",
+              "arg": "sturdy_rope",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.6.2",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.6.2.0",
+              "arg": "empty_chest",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.6.2.1",
+              "arg": "secret_room",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "r7container",
+      "name": "tie_rope_to_rail",
+      "conditionIndex": 2,
+      "addIndex": 6,
+      "predicateSet": [
+        {
+          "id": "c.7.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.7.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.7.0.1",
+              "arg": "balcony",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.7.1",
+          "name": "equip",
+          "arguments": [
+            {
+              "id": "c.7.1.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.7.1.1",
+              "arg": "sturdy_rope",
+              "type": "elements",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.7.2",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.7.2.0",
+              "arg": "tied_rope",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.7.2.1",
+              "arg": "rail",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "r8container",
+      "name": "climb_down",
+      "conditionIndex": 3,
+      "addIndex": 4,
+      "predicateSet": [
+        {
+          "id": "c.8.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.8.0.0",
+              "arg": "tied_rope",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.8.0.1",
+              "arg": "rail",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.8.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.8.0.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "a.8.0.1",
+              "arg": "road_to_home",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.8.2",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.8.2.0",
+              "arg": "virgil",
+              "type": "elements",
+              "variable": false
+            },
+            {
+              "id": "c.8.2.1",
+              "arg": "balcony",
+              "type": "locations",
+              "variable": false
+            }
+          ],
+          "removeFlag": true
+        }
+      ],
+      "sets": [
+        {
+          "id": "elements",
+          "elements": []
+        },
+        {
+          "id": "locations",
+          "elements": []
+        },
+        {
+          "id": "locked",
+          "elements": []
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "trapped",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i0.0",
+          "arg": "virgil",
+          "type": "elements",
+          "variable": false,
+          "value": "virgil"
+        },
+        {
+          "id": "i0.1",
+          "arg": "sealed_room",
+          "type": "locked",
+          "variable": false,
+          "value": "sealed_room"
+        }
+      ]
+    },
+    {
+      "id": "i1",
+      "name": "trapped",
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "metal_key",
+          "type": "elements",
+          "variable": false,
+          "value": "metal_key"
+        },
+        {
+          "id": "i1.1",
+          "arg": "sealed_room",
+          "type": "locked",
+          "variable": false,
+          "value": "sealed_room"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "adjacent",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "locked_exit",
+          "type": "locations",
+          "variable": false,
+          "value": "locked_exit"
+        },
+        {
+          "id": "i2.1",
+          "arg": "hallway",
+          "type": "locations",
+          "variable": false,
+          "value": "hallway"
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i3.0",
+          "arg": "hallway",
+          "type": "locations",
+          "variable": false,
+          "value": "hallway"
+        },
+        {
+          "id": "i3.1",
+          "arg": "locked_exit",
+          "type": "locations",
+          "variable": false,
+          "value": "locked_exit"
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i4.0",
+          "arg": "hallway",
+          "type": "locations",
+          "variable": false,
+          "value": "hallway"
+        },
+        {
+          "id": "i4.1",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i5.0",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        },
+        {
+          "id": "i5.1",
+          "arg": "hallway",
+          "type": "locations",
+          "variable": false,
+          "value": "hallway"
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i6.0",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        },
+        {
+          "id": "i6.1",
+          "arg": "secret_room",
+          "type": "locations",
+          "variable": false,
+          "value": "secret_room"
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i7.0",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        },
+        {
+          "id": "i7.1",
+          "arg": "ballroom",
+          "type": "locations",
+          "variable": false,
+          "value": "ballroom"
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i9.0",
+          "arg": "secret_room",
+          "type": "locations",
+          "variable": false,
+          "value": "secret_room"
+        },
+        {
+          "id": "i9.1",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        }
+      ]
+    },
+    {
+      "id": "i10",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i10.0",
+          "arg": "ballroom",
+          "type": "locations",
+          "variable": false,
+          "value": "ballroom"
+        },
+        {
+          "id": "i10.1",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        }
+      ]
+    },
+    {
+      "id": "i11",
+      "name": "adjacent",
+      "arguments": [
+        {
+          "id": "i11.0",
+          "arg": "ballroom",
+          "type": "locations",
+          "variable": false,
+          "value": "ballroom"
+        },
+        {
+          "id": "i11.1",
+          "arg": "balcony",
+          "type": "locations",
+          "variable": false,
+          "value": "balcony"
+        }
+      ]
+    },
+    {
+      "id": "i12",
+      "name": "at",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i12.0",
+          "arg": "golden_key",
+          "type": "elements",
+          "variable": false,
+          "value": "golden_key"
+        },
+        {
+          "id": "i12.1",
+          "arg": "bedroom",
+          "type": "locations",
+          "variable": false,
+          "value": "bedroom"
+        }
+      ]
+    },
+    {
+      "id": "i13",
+      "name": "at",
+      "arguments": [
+        {
+          "id": "i13.0",
+          "arg": "golden_chest",
+          "type": "elements",
+          "variable": false,
+          "value": "golden_chest"
+        },
+        {
+          "id": "i13.1",
+          "arg": "secret_room",
+          "type": "locations",
+          "variable": false,
+          "value": "secret_room"
+        }
+      ]
+    },
+    {
+      "id": "i14",
+      "name": "inside",
+      "arguments": [
+        {
+          "id": "i14.0",
+          "arg": "sturdy_rope",
+          "type": "elements",
+          "variable": false,
+          "value": "sturdy_rope"
+        },
+        {
+          "id": "i14.1",
+          "arg": "opened_chest",
+          "type": "elements",
+          "variable": false,
+          "value": "opened_chest"
+        }
+      ]
+    },
+    {
+      "id": "i15",
+      "name": "adjacent",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i15.0",
+          "arg": "balcony",
+          "type": "locations",
+          "variable": false,
+          "value": "balcony"
+        },
+        {
+          "id": "i15.1",
+          "arg": "ballroom",
+          "type": "locations",
+          "variable": false,
+          "value": "ballroom"
+        }
+      ]
+    }
+  ],
+  6,
+  11,
+  16
+]

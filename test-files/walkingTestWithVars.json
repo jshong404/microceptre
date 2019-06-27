@@ -1,0 +1,274 @@
+[
+  [
+    {
+      "id": "people",
+      "elements": [
+        "naz",
+        "alex",
+        "myles",
+        "brian"
+      ]
+    },
+    {
+      "id": "locations",
+      "elements": [
+        "livingRoom",
+        "diningRoom"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "adjacent",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "locations"
+        },
+        {
+          "id": "p0.1",
+          "value": "locations"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "at",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "people"
+        },
+        {
+          "id": "p1.1",
+          "value": "locations"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p1",
+      "name": "at",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "people"
+        },
+        {
+          "id": "p1.1",
+          "value": "locations"
+        }
+      ]
+    },
+    {
+      "id": "p0",
+      "name": "adjacent",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "locations"
+        },
+        {
+          "id": "p0.1",
+          "value": "locations"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "move",
+      "conditionIndex": 2,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "X",
+              "type": "people",
+              "variable": true
+            },
+            {
+              "id": "c.1.0.1",
+              "arg": "Location",
+              "type": "locations",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.1.1",
+          "name": "adjacent",
+          "arguments": [
+            {
+              "id": "c.1.1.0",
+              "arg": "Location",
+              "type": "locations",
+              "variable": true
+            },
+            {
+              "id": "c.1.1.1",
+              "arg": "Location2",
+              "type": "locations",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.1.0",
+          "name": "at",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "X",
+              "type": "people",
+              "variable": true
+            },
+            {
+              "id": "a.1.0.1",
+              "arg": "Location2",
+              "type": "locations",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "people",
+          "elements": [
+            "X"
+          ]
+        },
+        {
+          "id": "locations",
+          "elements": [
+            "Location",
+            "Location2"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "at",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i0.0",
+          "arg": "naz",
+          "type": "people",
+          "variable": false,
+          "value": "naz"
+        },
+        {
+          "id": "i0.1",
+          "arg": "livingRoom",
+          "type": "locations",
+          "variable": false,
+          "value": "livingRoom"
+        }
+      ]
+    },
+    {
+      "id": "i1",
+      "name": "at",
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "alex",
+          "type": "people",
+          "variable": false,
+          "value": "alex"
+        },
+        {
+          "id": "i1.1",
+          "arg": "livingRoom",
+          "type": "locations",
+          "variable": false,
+          "value": "livingRoom"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "at",
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "myles",
+          "type": "people",
+          "variable": false,
+          "value": "myles"
+        },
+        {
+          "id": "i2.1",
+          "arg": "livingRoom",
+          "type": "locations",
+          "variable": false,
+          "value": "livingRoom"
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "name": "at",
+      "arguments": [
+        {
+          "id": "i3.0",
+          "arg": "brian",
+          "type": "people",
+          "variable": false,
+          "value": "brian"
+        },
+        {
+          "id": "i3.1",
+          "arg": "livingRoom",
+          "type": "locations",
+          "variable": false,
+          "value": "livingRoom"
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "name": "adjacent",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i4.0",
+          "arg": "livingRoom",
+          "type": "locations",
+          "variable": false,
+          "value": "livingRoom"
+        },
+        {
+          "id": "i4.1",
+          "arg": "diningRoom",
+          "type": "locations",
+          "variable": false,
+          "value": "diningRoom"
+        }
+      ]
+    }
+  ],
+  2,
+  1,
+  5
+]

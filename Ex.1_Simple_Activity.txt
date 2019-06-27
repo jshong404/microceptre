@@ -1,0 +1,251 @@
+﻿[
+  [
+    {
+      "id": "people",
+      "elements": [
+        "dodie",
+        "lizzie"
+      ]
+    },
+    {
+      "id": "activity",
+      "elements": [
+        "listens_to_music",
+        "goes_running"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "now",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "people"
+        },
+        {
+          "id": "p0.1",
+          "value": "activity"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "then",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "activity"
+        },
+        {
+          "id": "p1.1",
+          "value": "activity"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "now",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "people"
+        },
+        {
+          "id": "p0.1",
+          "value": "activity"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "then",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "activity"
+        },
+        {
+          "id": "p1.1",
+          "value": "activity"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "switch",
+      "conditionIndex": 2,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "Subject",
+              "type": "people",
+              "variable": true
+            },
+            {
+              "id": "c.1.0.1",
+              "arg": "Verb",
+              "type": "activity",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.1.1",
+          "name": "then",
+          "arguments": [
+            {
+              "id": "c.1.1.0",
+              "arg": "Verb",
+              "type": "activity",
+              "variable": true
+            },
+            {
+              "id": "c.1.1.1",
+              "arg": "Second_verb",
+              "type": "activity",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.1.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "Subject",
+              "type": "people",
+              "variable": true
+            },
+            {
+              "id": "a.1.0.1",
+              "arg": "Second_verb",
+              "type": "activity",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "people",
+          "elements": [
+            "Subject"
+          ]
+        },
+        {
+          "id": "activity",
+          "elements": [
+            "Verb",
+            "Second_verb"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "now",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i0.0",
+          "arg": "dodie",
+          "type": "people",
+          "variable": false,
+          "value": "dodie"
+        },
+        {
+          "id": "i0.1",
+          "arg": "listens_to_music",
+          "type": "activity",
+          "variable": false,
+          "value": "listens_to_music"
+        }
+      ]
+    },
+    {
+      "id": "i1",
+      "name": "now",
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "lizzie",
+          "type": "people",
+          "variable": false,
+          "value": "lizzie"
+        },
+        {
+          "id": "i1.1",
+          "arg": "goes_running",
+          "type": "activity",
+          "variable": false,
+          "value": "goes_running"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "listens_to_music",
+          "type": "activity",
+          "variable": false,
+          "value": "listens_to_music"
+        },
+        {
+          "id": "i2.1",
+          "arg": "goes_running",
+          "type": "activity",
+          "variable": false,
+          "value": "goes_running"
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i3.0",
+          "arg": "goes_running",
+          "type": "activity",
+          "variable": false,
+          "value": "goes_running"
+        },
+        {
+          "id": "i3.1",
+          "arg": "listens_to_music",
+          "type": "activity",
+          "variable": false,
+          "value": "listens_to_music"
+        }
+      ]
+    }
+  ],
+  2,
+  1,
+  4
+]

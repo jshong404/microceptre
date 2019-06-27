@@ -1,0 +1,86 @@
+﻿[
+  [],
+  [
+    {
+      "id": "p0",
+      "name": "p",
+      "argumentIndex": 0,
+      "arguments": []
+    },
+    {
+      "id": "p1",
+      "name": "q",
+      "argumentIndex": 0,
+      "arguments": []
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "p",
+      "argumentIndex": 0,
+      "arguments": []
+    },
+    {
+      "id": "p1",
+      "name": "q",
+      "argumentIndex": 0,
+      "arguments": []
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "r1",
+      "conditionIndex": 1,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "p",
+          "arguments": [],
+          "removeFlag": true
+        },
+        {
+          "id": "a.1.0",
+          "name": "q",
+          "arguments": [],
+          "removeFlag": false
+        }
+      ],
+      "sets": []
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "p",
+      "argumentIndex": 0,
+      "arguments": []
+    },
+    {
+      "id": "i1",
+      "name": "p",
+      "arguments": []
+    },
+    {
+      "id": "i2",
+      "name": "p",
+      "arguments": []
+    },
+    {
+      "id": "i3",
+      "name": "p",
+      "arguments": []
+    },
+    {
+      "id": "i4",
+      "name": "p",
+      "arguments": []
+    }
+  ],
+  2,
+  1,
+  5
+]

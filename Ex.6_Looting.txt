@@ -1,0 +1,384 @@
+﻿[
+  [
+    {
+      "id": "role",
+      "elements": [
+        "the_tank",
+        "the_fighter",
+        "the_rogue",
+        "the_healer"
+      ]
+    },
+    {
+      "id": "item",
+      "elements": [
+        "a_determination_potion",
+        "a_sword",
+        "some_daggers",
+        "a_shield"
+      ]
+    },
+    {
+      "id": "action",
+      "elements": [
+        "equips",
+        "leaves"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "so,",
+      "argumentIndex": 3,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "role"
+        },
+        {
+          "id": "p0.1",
+          "value": "action"
+        },
+        {
+          "id": "p0.2",
+          "value": "item"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "character:",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "role"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "there_is",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "item"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "so,",
+      "argumentIndex": 3,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "role"
+        },
+        {
+          "id": "p0.1",
+          "value": "action"
+        },
+        {
+          "id": "p0.2",
+          "value": "item"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "character:",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "role"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "there_is",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "item"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "take_the_item",
+      "conditionIndex": 2,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "character:",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "Individual",
+              "type": "role",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.1.1",
+          "name": "there_is",
+          "arguments": [
+            {
+              "id": "c.1.1.0",
+              "arg": "Trinket",
+              "type": "item",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.1.0",
+          "name": "so,",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "Individual",
+              "type": "role",
+              "variable": true
+            },
+            {
+              "id": "a.1.0.1",
+              "arg": "equips",
+              "type": "action",
+              "variable": false
+            },
+            {
+              "id": "a.1.0.2",
+              "arg": "Trinket",
+              "type": "item",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "role",
+          "elements": [
+            "Individual"
+          ]
+        },
+        {
+          "id": "item",
+          "elements": [
+            "Trinket"
+          ]
+        },
+        {
+          "id": "action",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "r2container",
+      "name": "leave_the_item",
+      "conditionIndex": 2,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.2.0",
+          "name": "character:",
+          "arguments": [
+            {
+              "id": "c.2.0.0",
+              "arg": "Character",
+              "type": "role",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.2.1",
+          "name": "there_is",
+          "arguments": [
+            {
+              "id": "c.2.1.0",
+              "arg": "Thing",
+              "type": "item",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.2.0",
+          "name": "so,",
+          "arguments": [
+            {
+              "id": "a.2.0.0",
+              "arg": "Character",
+              "type": "role",
+              "variable": true
+            },
+            {
+              "id": "a.2.0.1",
+              "arg": "leaves",
+              "type": "action",
+              "variable": false
+            },
+            {
+              "id": "a.2.0.2",
+              "arg": "Thing",
+              "type": "item",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "role",
+          "elements": [
+            "Character"
+          ]
+        },
+        {
+          "id": "item",
+          "elements": [
+            "Thing"
+          ]
+        },
+        {
+          "id": "action",
+          "elements": []
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "character:",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i0.0",
+          "arg": "the_tank",
+          "type": "role",
+          "variable": false,
+          "value": "the_tank"
+        }
+      ]
+    },
+    {
+      "id": "i1",
+      "name": "character:",
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "the_fighter",
+          "type": "role",
+          "variable": false,
+          "value": "the_fighter"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "character:",
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "the_rogue",
+          "type": "role",
+          "variable": false,
+          "value": "the_rogue"
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "name": "character:",
+      "arguments": [
+        {
+          "id": "i4.0",
+          "arg": "the_healer",
+          "type": "role",
+          "variable": false,
+          "value": "the_healer"
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "name": "there_is",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i5.0",
+          "arg": "a_determination_potion",
+          "type": "item",
+          "variable": false,
+          "value": "a_determination_potion"
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "name": "there_is",
+      "arguments": [
+        {
+          "id": "i6.0",
+          "arg": "a_sword",
+          "type": "item",
+          "variable": false,
+          "value": "a_sword"
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "name": "there_is",
+      "arguments": [
+        {
+          "id": "i7.0",
+          "arg": "some_daggers",
+          "type": "item",
+          "variable": false,
+          "value": "some_daggers"
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "name": "there_is",
+      "arguments": [
+        {
+          "id": "i8.0",
+          "arg": "a_shield",
+          "type": "item",
+          "variable": false,
+          "value": "a_shield"
+        }
+      ]
+    }
+  ],
+  3,
+  2,
+  9
+]

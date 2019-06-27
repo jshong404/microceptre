@@ -1,0 +1,551 @@
+﻿[
+  [
+    {
+      "id": "blocks",
+      "elements": [
+        "book",
+        "teacup",
+        "watch"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "free_arm",
+      "argumentIndex": 0,
+      "arguments": []
+    },
+    {
+      "id": "p1",
+      "name": "arm_holding",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "on_table",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "clear",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p3.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "covered",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p4.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "on",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p5.0",
+          "value": "blocks"
+        },
+        {
+          "id": "p5.1",
+          "value": "blocks"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "free_arm",
+      "argumentIndex": 0,
+      "arguments": []
+    },
+    {
+      "id": "p1",
+      "name": "arm_holding",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "on_table",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "clear",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p3.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "covered",
+      "argumentIndex": 1,
+      "arguments": [
+        {
+          "id": "p4.0",
+          "value": "blocks"
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "on",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p5.0",
+          "value": "blocks"
+        },
+        {
+          "id": "p5.1",
+          "value": "blocks"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "pick_up",
+      "conditionIndex": 5,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "clear",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.1.1",
+          "name": "free_arm",
+          "arguments": [],
+          "removeFlag": true
+        },
+        {
+          "id": "a.1.0",
+          "name": "arm_holding",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.1.4",
+          "name": "on_table",
+          "arguments": [
+            {
+              "id": "c.1.4.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        }
+      ],
+      "sets": [
+        {
+          "id": "blocks",
+          "elements": [
+            "Block"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "r2container",
+      "name": "put_on_table",
+      "conditionIndex": 2,
+      "addIndex": 6,
+      "predicateSet": [
+        {
+          "id": "c.2.0",
+          "name": "arm_holding",
+          "arguments": [
+            {
+              "id": "c.2.0.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.2.0",
+          "name": "clear",
+          "arguments": [
+            {
+              "id": "a.2.0.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.2.2",
+          "name": "on_table",
+          "arguments": [
+            {
+              "id": "a.2.2.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.2.4",
+          "name": "free_arm",
+          "arguments": [],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "blocks",
+          "elements": [
+            "Block"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "r3container",
+      "name": "put_on",
+      "conditionIndex": 3,
+      "addIndex": 10,
+      "predicateSet": [
+        {
+          "id": "c.3.0",
+          "name": "clear",
+          "arguments": [
+            {
+              "id": "c.3.0.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.3.1",
+          "name": "arm_holding",
+          "arguments": [
+            {
+              "id": "c.3.1.0",
+              "arg": "Block2",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.3.0",
+          "name": "on",
+          "arguments": [
+            {
+              "id": "a.3.0.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            },
+            {
+              "id": "a.3.0.1",
+              "arg": "Block2",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.3.2",
+          "name": "covered",
+          "arguments": [
+            {
+              "id": "a.3.2.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.3.2",
+          "name": "on_table",
+          "arguments": [
+            {
+              "id": "c.3.2.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.3.6",
+          "name": "free_arm",
+          "arguments": [],
+          "removeFlag": false
+        },
+        {
+          "id": "a.3.8",
+          "name": "clear",
+          "arguments": [
+            {
+              "id": "a.3.8.0",
+              "arg": "Block2",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "blocks",
+          "elements": [
+            "Block2",
+            "Block"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "r4container",
+      "name": "pick_from",
+      "conditionIndex": 5,
+      "addIndex": 8,
+      "predicateSet": [
+        {
+          "id": "c.4.1",
+          "name": "free_arm",
+          "arguments": [],
+          "removeFlag": true
+        },
+        {
+          "id": "c.4.2",
+          "name": "on",
+          "arguments": [
+            {
+              "id": "c.4.2.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            },
+            {
+              "id": "c.4.2.1",
+              "arg": "Block2",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "a.4.2",
+          "name": "arm_holding",
+          "arguments": [
+            {
+              "id": "a.4.2.0",
+              "arg": "Block2",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.4.4",
+          "name": "clear",
+          "arguments": [
+            {
+              "id": "a.4.4.0",
+              "arg": "Block",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "c.4.4",
+          "name": "clear",
+          "arguments": [
+            {
+              "id": "c.4.4.0",
+              "arg": "Block2",
+              "type": "blocks",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        }
+      ],
+      "sets": [
+        {
+          "id": "blocks",
+          "elements": [
+            "Block",
+            "Block2"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "free_arm",
+      "argumentIndex": 0,
+      "arguments": []
+    },
+    {
+      "id": "i1",
+      "name": "on_table",
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "book",
+          "type": "blocks",
+          "variable": false,
+          "value": "book"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "on_table",
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "teacup",
+          "type": "blocks",
+          "variable": false,
+          "value": "teacup"
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "name": "on_table",
+      "arguments": [
+        {
+          "id": "i3.0",
+          "arg": "watch",
+          "type": "blocks",
+          "variable": false,
+          "value": "watch"
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "name": "clear",
+      "arguments": [
+        {
+          "id": "i4.0",
+          "arg": "book",
+          "type": "blocks",
+          "variable": false,
+          "value": "book"
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "name": "clear",
+      "arguments": [
+        {
+          "id": "i5.0",
+          "arg": "teacup",
+          "type": "blocks",
+          "variable": false,
+          "value": "teacup"
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "name": "clear",
+      "arguments": [
+        {
+          "id": "i6.0",
+          "arg": "watch",
+          "type": "blocks",
+          "variable": false,
+          "value": "watch"
+        }
+      ]
+    }
+  ],
+  6,
+  4,
+  7
+]

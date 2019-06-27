@@ -1,0 +1,607 @@
+﻿[
+  [
+    {
+      "id": "characters",
+      "elements": [
+        "ryu",
+        "abuya",
+        "oppy",
+        "james"
+      ]
+    },
+    {
+      "id": "action",
+      "elements": [
+        "goes_searching_for_a_dragon",
+        "smells_the_flowers",
+        "stargazes",
+        "goes_for_a_walk"
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "first",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "characters"
+        },
+        {
+          "id": "p0.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "then",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "action"
+        },
+        {
+          "id": "p1.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "now",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "characters"
+        },
+        {
+          "id": "p2.1",
+          "value": "action"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "p0",
+      "name": "first",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p0.0",
+          "value": "characters"
+        },
+        {
+          "id": "p0.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p1",
+      "name": "then",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p1.0",
+          "value": "action"
+        },
+        {
+          "id": "p1.1",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "now",
+      "argumentIndex": 2,
+      "arguments": [
+        {
+          "id": "p2.0",
+          "value": "characters"
+        },
+        {
+          "id": "p2.1",
+          "value": "action"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "index": 1,
+      "id": "r1container",
+      "name": "rotation",
+      "conditionIndex": 2,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.1.0",
+          "name": "first",
+          "arguments": [
+            {
+              "id": "c.1.0.0",
+              "arg": "Person",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "c.1.0.1",
+              "arg": "Activity",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.1.1",
+          "name": "then",
+          "arguments": [
+            {
+              "id": "c.1.1.0",
+              "arg": "Activity",
+              "type": "action",
+              "variable": true
+            },
+            {
+              "id": "c.1.1.1",
+              "arg": "Next_activity",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.1.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "a.1.0.0",
+              "arg": "Person",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "a.1.0.1",
+              "arg": "Next_activity",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "characters",
+          "elements": [
+            "Person"
+          ]
+        },
+        {
+          "id": "action",
+          "elements": [
+            "Activity",
+            "Next_activity"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "r2container",
+      "name": "new_rotation",
+      "conditionIndex": 2,
+      "addIndex": 2,
+      "predicateSet": [
+        {
+          "id": "c.2.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "c.2.0.0",
+              "arg": "Character",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "c.2.0.1",
+              "arg": "Verb",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": true
+        },
+        {
+          "id": "c.2.1",
+          "name": "then",
+          "arguments": [
+            {
+              "id": "c.2.1.0",
+              "arg": "Verb",
+              "type": "action",
+              "variable": true
+            },
+            {
+              "id": "c.2.1.1",
+              "arg": "Verb2",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        },
+        {
+          "id": "a.2.0",
+          "name": "now",
+          "arguments": [
+            {
+              "id": "a.2.0.0",
+              "arg": "Character",
+              "type": "characters",
+              "variable": true
+            },
+            {
+              "id": "a.2.0.1",
+              "arg": "Verb2",
+              "type": "action",
+              "variable": true
+            }
+          ],
+          "removeFlag": false
+        }
+      ],
+      "sets": [
+        {
+          "id": "characters",
+          "elements": [
+            "Character"
+          ]
+        },
+        {
+          "id": "action",
+          "elements": [
+            "Verb",
+            "Verb2"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": "i0",
+      "name": "first",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i0.0",
+          "arg": "ryu",
+          "type": "characters",
+          "variable": false,
+          "value": "ryu"
+        },
+        {
+          "id": "i0.1",
+          "arg": "goes_searching_for_a_dragon",
+          "type": "action",
+          "variable": false,
+          "value": "goes_searching_for_a_dragon"
+        }
+      ]
+    },
+    {
+      "id": "i1",
+      "name": "first",
+      "arguments": [
+        {
+          "id": "i1.0",
+          "arg": "abuya",
+          "type": "characters",
+          "variable": false,
+          "value": "abuya"
+        },
+        {
+          "id": "i1.1",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        }
+      ]
+    },
+    {
+      "id": "i2",
+      "name": "first",
+      "arguments": [
+        {
+          "id": "i2.0",
+          "arg": "oppy",
+          "type": "characters",
+          "variable": false,
+          "value": "oppy"
+        },
+        {
+          "id": "i2.1",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        }
+      ]
+    },
+    {
+      "id": "i3",
+      "name": "first",
+      "arguments": [
+        {
+          "id": "i3.0",
+          "arg": "james",
+          "type": "characters",
+          "variable": false,
+          "value": "james"
+        },
+        {
+          "id": "i3.1",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "name": "then",
+      "argumentIndex": 0,
+      "arguments": [
+        {
+          "id": "i4.0",
+          "arg": "goes_searching_for_a_dragon",
+          "type": "action",
+          "variable": false,
+          "value": "goes_searching_for_a_dragon"
+        },
+        {
+          "id": "i4.1",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        }
+      ]
+    },
+    {
+      "id": "i5",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i5.0",
+          "arg": "goes_searching_for_a_dragon",
+          "type": "action",
+          "variable": false,
+          "value": "goes_searching_for_a_dragon"
+        },
+        {
+          "id": "i5.1",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        }
+      ]
+    },
+    {
+      "id": "i6",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i6.0",
+          "arg": "goes_searching_for_a_dragon",
+          "type": "action",
+          "variable": false,
+          "value": "goes_searching_for_a_dragon"
+        },
+        {
+          "id": "i6.1",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        }
+      ]
+    },
+    {
+      "id": "i7",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i7.0",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        },
+        {
+          "id": "i7.1",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        }
+      ]
+    },
+    {
+      "id": "i8",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i8.0",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        },
+        {
+          "id": "i8.1",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        }
+      ]
+    },
+    {
+      "id": "i9",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i9.0",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        },
+        {
+          "id": "i9.1",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        }
+      ]
+    },
+    {
+      "id": "i10",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i10.0",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        },
+        {
+          "id": "i10.1",
+          "arg": "goes_searching_for_a_dragon",
+          "type": "action",
+          "variable": false,
+          "value": "goes_searching_for_a_dragon"
+        }
+      ]
+    },
+    {
+      "id": "i11",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i11.0",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        },
+        {
+          "id": "i11.1",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        }
+      ]
+    },
+    {
+      "id": "i12",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i12.0",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        },
+        {
+          "id": "i12.1",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        }
+      ]
+    },
+    {
+      "id": "i13",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i13.0",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        },
+        {
+          "id": "i13.1",
+          "arg": "goes_searching_for_a_dragon",
+          "type": "action",
+          "variable": false,
+          "value": "goes_searching_for_a_dragon"
+        }
+      ]
+    },
+    {
+      "id": "i14",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i14.0",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        },
+        {
+          "id": "i14.1",
+          "arg": "smells_the_flowers",
+          "type": "action",
+          "variable": false,
+          "value": "smells_the_flowers"
+        }
+      ]
+    },
+    {
+      "id": "i15",
+      "name": "then",
+      "arguments": [
+        {
+          "id": "i15.0",
+          "arg": "goes_for_a_walk",
+          "type": "action",
+          "variable": false,
+          "value": "goes_for_a_walk"
+        },
+        {
+          "id": "i15.1",
+          "arg": "stargazes",
+          "type": "action",
+          "variable": false,
+          "value": "stargazes"
+        }
+      ]
+    }
+  ],
+  3,
+  2,
+  16
+]
